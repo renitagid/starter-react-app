@@ -1,0 +1,64 @@
+.app {
+    background-color: rosybrown;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  
+  .dice {
+    background-color: white;
+    margin: 10px;
+    width: 186px;
+    height: 186px;
+    border-style: solid;
+    font-size: 155px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .previous {
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 186px;
+    width: 186px;
+    border-style: solid;
+    font-size: 20px;
+    align-content: flex-start;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 80px;
+  }
+  
+  .eachlast {
+    width: 25px;
+    height: 25px;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 2px;
+    margin: 1px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  table {
+    background-color: white;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border-style: solid;
+    text-align: center;
+    vertical-align: center;
+    width: 60px;
+  }

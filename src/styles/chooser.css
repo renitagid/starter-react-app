@@ -1,0 +1,82 @@
+.viewA {
+    background-color: cadetblue;
+    border-radius: 3rem;
+    border-style: solid;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  * {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20px;
+  }
+  
+  .viewB {
+    background-color: rosybrown;
+    border-radius: 3rem;
+    border-style: solid;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .top {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .voteBlock {
+    text-align: center;
+    padding: 20px;
+  
+  }
+  
+  .choice {
+    color: white;
+    font-size: 60px;
+  
+  }
+  
+  .buttonrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 500px;
+  }
+  
+  .startButton {
+    text-align: center;
+  }
+  
+  .lists {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 2rem;
+  }
+  
+  .submitBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .add {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 2rem;
+    margin: 20px;
+  }
+  
+  .match {
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  span {
+    text-decoration: underline;
+  }

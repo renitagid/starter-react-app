@@ -1,0 +1,89 @@
+/* * {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: lightblue;
+  } */
+  
+  /* ---HEADER--- */
+  
+  h1 {
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 4rem;
+  }
+  
+  .butcher-pig-image {
+    margin: 1rem;
+    width: 10rem;
+    border-style: solid;
+  }
+  
+  /* ---BODY--- */
+  
+  button {
+    border-radius: 0.9rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .body-container {
+    padding-bottom: 3rem;
+  }
+  
+  .page-container {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .input-section {
+    background-color: lightpink;
+    border-radius: .5rem;
+    color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  .user-input {
+    border-radius: .5rem;
+    font-size: 1rem;
+    height: 3rem;
+    width: 30rem;
+    background-color: white;
+  }
+  
+  /* ---FOOTER--- */
+  
+  footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    h1 {
+      font-size: 3rem;
+    }
+    .user-input {
+      font-size: 1rem;
+      height: 5rem;
+      padding: 1rem;
+      text-align: center;
+      width: 90%;
+  
+    }
+  }
+  
+  h4 {
+  background-color: black
+  }
+  
+  .output {
+    border-style: solid;
+    background-color: white;
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+  }
