@@ -86,16 +86,16 @@ const TicTacToe = () => {
   useEffect(() => checkWinner(squares));
 
   return (
-    <>
+    <div className="tttbody">
   
-      <h1>Tic Tac Toe</h1>
+      <h1 className="ttth1">Tic Tac Toe</h1>
       <div>
       <div className="choose">
         <div >
           <p> Player 1, choose a mark:</p>
 
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose1("🦋");
             }}
@@ -103,7 +103,7 @@ const TicTacToe = () => {
             🦋
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose1("🐝");
             }}
@@ -111,7 +111,7 @@ const TicTacToe = () => {
             🐝
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose1("🐞");
             }}
@@ -119,7 +119,7 @@ const TicTacToe = () => {
             🐞
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose1("🪲");
             }}
@@ -130,7 +130,7 @@ const TicTacToe = () => {
         <div>
           <p> Player 2, choose a mark:</p>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose2("🦉");
             }}
@@ -138,7 +138,7 @@ const TicTacToe = () => {
             🦉
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose2("🐿");
             }}
@@ -146,7 +146,7 @@ const TicTacToe = () => {
             🐿
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose2("🦔");
             }}
@@ -154,7 +154,7 @@ const TicTacToe = () => {
             🦔
           </button>
           <button
-            className="button"
+            className="tttbutton"
             onClick={() => {
               choose2("🦦");
             }}
@@ -164,6 +164,8 @@ const TicTacToe = () => {
         </div>
       </div>
       <p className="yourmove">Your move: {user}</p>
+      <div className="winner">{winner}</div>
+
       <div className="gameboard">
         {squares.map((value, index) => {
           return (
@@ -177,10 +179,10 @@ const TicTacToe = () => {
         })}
         <p></p>
         <Button refresh={refresh} />
-        <div className="winner">{winner}</div>
+
       </div>
       </div>
-    </>
+    </div>
   );
 };
 

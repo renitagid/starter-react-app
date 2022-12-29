@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <>
       <button
-        className="button"
+className="refresh"
         onClick={() => {
           props.refresh();
         }}
