@@ -6,7 +6,7 @@ import Statistics from "../components/dice/Statistics";
 
 const DiceRoller = () => {
   const [diceOptions] = useState([1, 2, 3, 4, 5, 6]);
-  let [diceIndex, setDiceIndex] = useState("Click to Roll");
+  let [diceIndex, setDiceIndex] = useState(null);
   const [lastRoll, setLastRoll] = useState([]);
   const [one, setOne] = useState("");
   const [two, setTwo] = useState("");
@@ -23,7 +23,7 @@ const DiceRoller = () => {
   const rollDice = () => {
     let randomNum = Math.floor(Math.random() * diceOptions.length);
     setDiceIndex(randomNum);
-    if (diceIndex !== "Click to Roll" && lastRoll.length < 36) {
+    if (diceIndex !== null && lastRoll.length < 36) {
       setLastRoll([...lastRoll, diceOptions[diceIndex]]);
     }
   };
@@ -41,6 +41,11 @@ const DiceRoller = () => {
     setFiveP(Math.round((five / lastRoll.length) * 100));
     setSixP(Math.round((six / lastRoll.length) * 100));
     return null;
+  };
+
+  const refresh = () => {
+    setDiceIndex(null);
+    setLastRoll([]);
   };
   useEffect(() => {
     calculator();
@@ -71,6 +76,7 @@ const DiceRoller = () => {
             sixP={sixP}
           />
         </div>
+        <button onClick={() => refresh()}>Refresh</button>
       </div>
     </>
   );
