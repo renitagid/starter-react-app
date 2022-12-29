@@ -14,7 +14,7 @@ const DiceRoller = () => {
   const [four, setFour] = useState("");
   const [five, setFive] = useState("");
   const [six, setSix] = useState("");
-  const [oneP, setOneP] = useState("");
+  const [oneP, setOneP] = useState("0");
   const [twoP, setTwoP] = useState("");
   const [threeP, setThreeP] = useState("");
   const [fourP, setFourP] = useState("");
@@ -34,13 +34,36 @@ const DiceRoller = () => {
     setFour(lastRoll.filter((x) => x === 4).length);
     setFive(lastRoll.filter((x) => x === 5).length);
     setSix(lastRoll.filter((x) => x === 6).length);
-    setOneP(Math.round((one / lastRoll.length) * 100));
-    setTwoP(Math.round((two / lastRoll.length) * 100));
-    setThreeP(Math.round((three / lastRoll.length) * 100));
-    setFourP(Math.round((four / lastRoll.length) * 100));
-    setFiveP(Math.round((five / lastRoll.length) * 100));
-    setSixP(Math.round((six / lastRoll.length) * 100));
-    return null;
+    if (Math.round((one / lastRoll.length) * 100)) {
+      setOneP(Math.round((one / lastRoll.length) * 100));
+    } else {
+      setOneP(0);
+    }
+    if (Math.round((two / lastRoll.length) * 100)) {
+      setTwoP(Math.round((two / lastRoll.length) * 100));
+    } else {
+      setTwoP(0);
+    }
+    if (Math.round((three / lastRoll.length) * 100)) {
+      setThreeP(Math.round((three / lastRoll.length) * 100));
+    } else {
+      setThreeP(0);
+    }
+    if (Math.round((four / lastRoll.length) * 100)) {
+      setFourP(Math.round((four / lastRoll.length) * 100));
+    } else {
+      setFourP(0);
+    }
+    if (Math.round((five / lastRoll.length) * 100)) {
+      setFiveP(Math.round((five / lastRoll.length) * 100));
+    } else {
+      setFiveP(0);
+    }
+    if (Math.round((six / lastRoll.length) * 100)) {
+      setSixP(Math.round((six / lastRoll.length) * 100));
+    } else {
+      setSixP(0);
+    }
   };
 
   const refresh = () => {
