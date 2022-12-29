@@ -98,6 +98,7 @@ const PigLatin = () => {
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ");
     console.log("translatedWords:", translatedWords);
+    
 
     // NO MODIFICATION NEEDED: this will update the inputTranslated variable in state
     setInputTranslated(translatedWords);
@@ -119,6 +120,19 @@ const PigLatin = () => {
   const handleInput = (e) => {
     setUserInput(e.target.value.toLowerCase());
   };
+
+  if('speechSynthesis' in window){
+    console.log({inputTranslated})
+  } else {
+    console.log("Web Speech API not supported :-(")   
+  }
+  const synth = window.speechSynthesis
+  let ourText = inputTranslated
+  const utterThis = new SpeechSynthesisUtterance(ourText)
+  utterThis.rate = .75;
+  
+  
+
 
   return (
     <div className="page-container">
@@ -144,7 +158,9 @@ const PigLatin = () => {
             alt="pig typing"
             className="pig-image"
           />
-          <p></p>{inputTranslated}
+          <p/>{inputTranslated}
+
+          <button onClick={() => synth.speak(utterThis)}>Speak</button>
         </div>
       </div>
       <footer>&copy; 2022 | Coded by: Renita and Charlie!</footer>
