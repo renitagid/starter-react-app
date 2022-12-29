@@ -1,28 +1,30 @@
-.app {
+#app {
     background-color: rosybrown;
     border-width: 5px;
     border-style: solid;
     display: flex;
-    width: 500px;
-    height: 300px;
+    width: 75%;
+    height: 75%;
     margin: 0 auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
   }
   
-  .dice {
+  #dice {
     background-color: white;
     margin: 10px;
     width: 186px;
     height: 186px;
     border-style: solid;
-    font-size: 155px;
+    font-size: 13rem;
     font-weight: bold;
     text-align: center;
+    padding-top: 5px;
+    color: black;
   }
   
-  .previous {
+  #previous {
     background-color: white;
     margin: 10px;
     display: flex;
@@ -34,10 +36,11 @@
     align-content: flex-start;
   }
   
-  h1 {
+  .diceh1 {
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
     font-size: 80px;
+    color: black;
   }
   
   .eachlast {
@@ -54,11 +57,40 @@
   table {
     background-color: white;
     border-collapse: collapse;
+    margin: 10px;
   }
   
   th, td {
     border-style: solid;
     text-align: center;
     vertical-align: center;
-    width: 60px;
+    width: 40px;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: medium;
+    text-decoration: none;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
   }

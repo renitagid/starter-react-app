@@ -6,7 +6,7 @@ import Statistics from "../components/dice/Statistics";
 
 const DiceRoller = () => {
   const [diceOptions] = useState([1, 2, 3, 4, 5, 6]);
-  let [diceIndex, setDiceIndex] = useState(null);
+  let [diceIndex, setDiceIndex] = useState("Click to Roll");
   const [lastRoll, setLastRoll] = useState([]);
   const [one, setOne] = useState("");
   const [two, setTwo] = useState("");
@@ -23,12 +23,9 @@ const DiceRoller = () => {
   const rollDice = () => {
     let randomNum = Math.floor(Math.random() * diceOptions.length);
     setDiceIndex(randomNum);
-    if (diceIndex !== null && lastRoll.length < 36) {
+    if (diceIndex !== "Click to Roll" && lastRoll.length < 36) {
       setLastRoll([...lastRoll, diceOptions[diceIndex]]);
     }
-
-
-
   };
   const calculator = () => {
     setOne(lastRoll.filter((x) => x === 1).length);
@@ -43,13 +40,15 @@ const DiceRoller = () => {
     setFourP(Math.round((four / lastRoll.length) * 100));
     setFiveP(Math.round((five / lastRoll.length) * 100));
     setSixP(Math.round((six / lastRoll.length) * 100));
-    return null
-    }
-  useEffect(() => {calculator()})
+    return null;
+  };
+  useEffect(() => {
+    calculator();
+  });
   return (
     <>
-      <h1>Roll the Dice</h1>
-      <div className="app">
+      <h1 className="diceh1">Roll the Dice</h1>
+      <div id="app">
         <Dice
           diceOptions={diceOptions}
           diceIndex={diceIndex}
