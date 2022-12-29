@@ -1,20 +1,19 @@
-/* * {
+.page-container {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    background-color: lightblue;
-  } */
+    color: black;
+  }
   
   /* ---HEADER--- */
   
-  h1 {
-    font-family: 'Rubik Bubbles', cursive;
+  .plh1 {
+    font-family: "Fredoka One", cursive;
     font-size: 4rem;
+    color: black;
   }
   
-  .butcher-pig-image {
-    margin: 1rem;
-    width: 10rem;
-    border-style: solid;
+  .pig-image {
+    width: 10rem
   }
   
   /* ---BODY--- */
@@ -35,20 +34,21 @@
   }
   
   .input-section {
-    background-color: lightpink;
+    background-color: rgb(243, 164, 175);
     border-radius: .5rem;
     color: #fff;
     margin: 1rem;
     padding: 1rem;
     border-style: solid;
     border-color: black;
+
   }
   
   .user-input {
     border-radius: .5rem;
     font-size: 1rem;
     height: 3rem;
-    width: 30rem;
+    width: 75%;
     background-color: white;
   }
   
@@ -76,7 +76,15 @@
   }
   
   h4 {
-  background-color: black
+  background-color: black;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
   }
   
   .output {
