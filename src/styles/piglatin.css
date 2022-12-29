@@ -95,3 +95,7 @@
     padding: 1rem;
     font-size: 2rem;
   }
+
+  textarea {
+    resize: none;
+  }
