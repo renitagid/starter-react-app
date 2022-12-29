@@ -1,0 +1,67 @@
+/* * {
+    font-family: "Handlee", cursive;
+    font-size: 16px;
+  }
+  body {
+    background-image: linear-gradient(rosybrown, rgb(217, 135, 97));
+    background-size: 1000px;
+  } */
+  
+  .app {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .sections {
+    margin-left: 100px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Pacifico", cursive;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  .indiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  button {
+    width: 100px;
+  }
+  
+  .cart {
+    padding: 20px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .small {
+    border-style: solid;
+    border-radius: 3rem;
+    background-color: beige;
+    width: 600px;
+    margin-left: 50px, auto;
+    margin-bottom: 500px;
+  }
+  
+  .total {
+    font-weight: 1000;
+  }
+  

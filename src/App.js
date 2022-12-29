@@ -8,6 +8,8 @@ import DiceRoller from "./pages/DiceRoller";
 import NotFound from "./pages/NotFound";
 import Chooser from "./pages/Chooser";
 import { Routes, Route } from "react-router-dom";
+import TicTacToe from "./pages/TicTacToe";
+import Order from "./pages/Order";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="piglatin" element={<PigLatin />} />
         <Route path="dice" element={<DiceRoller />} />
         <Route path="chooser" element={<Chooser />} />
+        <Route path="tictactoe" element={<TicTacToe />} />
+        <Route path="order" element={<Order />} />
       </Routes>
       <Footer />
     </>

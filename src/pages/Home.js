@@ -15,6 +15,12 @@ const Home = () => {
       <li><NavLink to={"/chooser"} className="nav-link">
         Chooser
       </NavLink></li>
+      <li><NavLink to={"/tictactoe"} className="nav-link">
+        Tic Tac Toe
+      </NavLink></li>
+      <li><NavLink to={"/order"} className="nav-link">
+        Order Food
+      </NavLink></li>
       </ul>
     </div>
   );
