@@ -126,9 +126,12 @@ const PigLatin = () => {
     console.log("Web Speech API not supported :-(");
   }
   const synth = window.speechSynthesis;
+  var voices = window.speechSynthesis.getVoices();
   let ourText = inputTranslated;
+  // let ourText = "hello my name is bobo"
   const utterThis = new SpeechSynthesisUtterance(ourText);
-  utterThis.rate = 0.75;
+  utterThis.rate = 0.85;
+  utterThis.voice = voices[42]
 
   return (
     <div className="page-container">

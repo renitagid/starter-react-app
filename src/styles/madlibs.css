@@ -1,0 +1,17 @@
+select {
+    font-size: 80px;
+}
+
+#mlbutton {
+    font-size: 80px;
+    width: 90%;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.selectall {
+    margin-left: 10%;
+}
+
+.mlh1 {
+    font-family: 'Sansita Swashed', cursive;
+}

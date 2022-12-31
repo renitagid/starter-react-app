@@ -21,6 +21,9 @@ const Home = () => {
       <li><NavLink to={"/order"} className="nav-link">
         Order Food
       </NavLink></li>
+      <li><NavLink to={"/madlibs"} className="nav-link">
+        Mad Libs
+      </NavLink></li>
       </ul>
     </div>
   );

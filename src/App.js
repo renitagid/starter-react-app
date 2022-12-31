@@ -10,6 +10,7 @@ import Chooser from "./pages/Chooser";
 import { Routes, Route } from "react-router-dom";
 import TicTacToe from "./pages/TicTacToe";
 import Order from "./pages/Order";
+import MadLibs from "./pages/MadLibs";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="chooser" element={<Chooser />} />
         <Route path="tictactoe" element={<TicTacToe />} />
         <Route path="order" element={<Order />} />
+        <Route path="madlibs" element={<MadLibs />} />
       </Routes>
       <Footer />
     </div>
