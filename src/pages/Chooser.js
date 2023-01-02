@@ -44,7 +44,7 @@ const Chooser = () => {
   };
 
   return (
-    <>
+    <div className="bodychooser">
 
         <User
           currentChoices={currentChoices}
@@ -58,7 +58,7 @@ const Chooser = () => {
           pickChoices = {pickChoices}
         />
       
-    </>
+    </div>
   );
 };
 

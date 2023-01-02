@@ -1,0 +1,19 @@
+.homebody {
+    background-color: darkslategray;
+    text-align: center;
+}
+
+.logo {
+    width: 15%;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.h1home {
+    color: white;
+}
+
+.h2home {
+    color: white;
+    font-family: "Fredoka One", cursive;
+}

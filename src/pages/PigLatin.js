@@ -139,7 +139,7 @@ const PigLatin = () => {
         <h1 className="plh1">Pig Latin Translator</h1>
 
         <div className="input-section">
-          <h4>Enter phrase to be translated:</h4>
+          <h4 className="h4pig">Enter phrase to be translated:</h4>
           <textarea
             type="text"
             className="user-input"
@@ -163,7 +163,6 @@ const PigLatin = () => {
           <button onClick={() => synth.speak(utterThis)}>Speak</button>
         </div>
       </div>
-      <footer>&copy; 2022 | Coded by: Renita and Charlie!</footer>
     </div>
   );
 };

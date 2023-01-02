@@ -12,8 +12,8 @@ const User = (props) => {
   return (
     <>
     <div className="top">
-    <h3>Welcome to the activity chooser, where you and a partner can decide what to do today!</h3>
-    <h4>What type of activities do you want to see?</h4>
+    <h3 className="h3chooser">Welcome to the activity chooser, where you and a partner can decide what to do today!</h3>
+    <h4 classname="h4chooser">What type of activities do you want to see?</h4>
     <div>
         <div className="buttonrow">
         <input type="radio" id="restaurants" name="pick" value="restaurants" onClick={()=>props.pickChoices(choices.restaurants)}/>

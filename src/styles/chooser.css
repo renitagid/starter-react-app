@@ -2,23 +2,23 @@
     background-color: cadetblue;
     border-radius: 3rem;
     border-style: solid;
-    width: 600px;
+    width: 75%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1rem;
   }
   
-  /* * {
+  .bodychooser {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 20px;
-  } */
+  }
   
   .viewB {
     background-color: rosybrown;
     border-radius: 3rem;
     border-style: solid;
-    width: 600px;
+    width: 75%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1rem;
   }
   
   .top {
@@ -43,7 +43,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px;
-    width: 500px;
+    width: 70%;
   }
   
   .startButton {
@@ -79,4 +79,8 @@
   
   span {
     text-decoration: underline;
+  }
+
+  .h4chooser {
+    background-color: gray;
   }

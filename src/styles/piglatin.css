@@ -10,6 +10,7 @@
     font-family: "Fredoka One", cursive;
     font-size: 4rem;
     color: black;
+    margin: 1rem;
   }
   
   .pig-image {
@@ -75,7 +76,7 @@
     }
   }
   
-  h4 {
+  .h4pig {
   background-color: black;
   padding: 5px;
   padding-left: 10px;

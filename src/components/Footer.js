@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>A work in progress!</div>
+    <div>Always a work in progress!</div>
   )
 }
 
