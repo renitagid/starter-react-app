@@ -20,7 +20,8 @@
     text-align: center;
     color: beige;
     font-size: 60px;
-    
+    font-family: "Fredoka One", cursive;
+    padding-top: 2rem;
   }
   
   .gameboard {

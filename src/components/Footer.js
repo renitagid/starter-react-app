@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Always a work in progress!</div>
+    <footer>© Renita Gidlund, 2023 || Constant work in progress, check back for updates!</footer>
   )
 }
 
