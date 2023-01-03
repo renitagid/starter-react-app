@@ -124,9 +124,14 @@ const showStoryText = () => {
       </select>
       </div>
 
-      <button id = "mlbutton" onClick={() => synth.speak(utterThis)}>Tell me a story <br/>📖</button>
-      <button onClick={() => showStoryText()}>Show me the text</button>
-      <div>{storyText}</div>
+
+      <div className="storyText">
+      <button id = "mlbutton" onClick={() => synth.speak(utterThis)}>🗣</button>
+        <span className="innerStoryText">
+        <button id="storybutton" onClick={() => showStoryText()}>Show my story</button>
+        <p/>
+        {storyText}</span>
+        </div>
     </div>
   );
 };

@@ -26,7 +26,6 @@ const App = () => {
         <Route path="order" element={<Order />} />
         <Route path="madlibs" element={<MadLibs />} />
       </Routes>
-      <Footer />
     </div>
   );
 };
