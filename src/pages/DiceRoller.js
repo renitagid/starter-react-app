@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import PastRolls from "../components/dice/PastRolls";
 import Dice from "../components/dice/Dice";
 import Statistics from "../components/dice/Statistics";
+import PieChart from "../components/dice/PieChart";
 
 const DiceRoller = () => {
   const [diceOptions] = useState([1, 2, 3, 4, 5, 6]);
@@ -99,8 +100,17 @@ const DiceRoller = () => {
             sixP={sixP}
           />
         </div>
+        <PieChart
+        oneP={oneP}
+        twoP={twoP}
+        threeP={threeP}
+        fourP={fourP}
+        fiveP={fiveP}
+        sixP={sixP}
+      />
         <button onClick={() => refresh()}>Refresh</button>
       </div>
+
     </>
   );
 };

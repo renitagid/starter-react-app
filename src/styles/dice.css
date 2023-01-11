@@ -95,3 +95,7 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+.piechart {
+    margin: 2rem;
+  }
